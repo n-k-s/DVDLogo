@@ -1,7 +1,6 @@
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-
 }
 let DVD = {
 
@@ -49,7 +48,6 @@ function draw() {
             DVD.yDiagIncreasing = true;
         }
     }
-
 }
 function mousePressed()
 {
@@ -58,6 +56,3 @@ function mousePressed()
     DVD.yDiagIncreasing = false;
     DVD.xDiagIncreasing = true;
 }
-
-function play ()
-{}
