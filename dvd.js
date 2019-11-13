@@ -16,6 +16,14 @@ function draw() {
     noStroke();
     fill(random(0, 255), random(0, 255), 150);
     square(DVD.x, DVD.y, 20);
+
+    //Mouse Collision
+    if (DVD.x == MouseX || DVD.y = MouseY)
+    {
+        collision();
+    }
+
+    //Wall Collision
     if (DVD.xDiagIncreasing)
     {
         DVD.x += DVD.speed;
@@ -55,4 +63,8 @@ function mousePressed()
     DVD.y = mouseY;
     DVD.yDiagIncreasing = false;
     DVD.xDiagIncreasing = true;
+}
+function collision()
+{
+
 }
