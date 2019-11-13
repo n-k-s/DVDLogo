@@ -21,7 +21,7 @@ function draw() {
     //Mouse Collision
     if ((DVD.x <= mouseX && mouseX <= DVD.x + 20) && (DVD.y <= mouseY && mouseY <= DVD.y + 20))
     {
-        collision();
+        collision(), 3000;
     }
 
     //Wall Collision
@@ -71,3 +71,5 @@ function collision()
     DVD.xDiagIncreasing = !DVD.xDiagIncreasing;
     DVD.yDiagIncreasing = !DVD.yDiagIncreasing;
 }
+
+
